@@ -8,3 +8,4 @@ Add your name below to join the project:
 - Vedant Kokane
 - Pratik Pawar
 - Samruddhi Varkhade
+- Rushikesh Gayake
