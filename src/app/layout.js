@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/ui/Footer"; // Ensure this matches your folder fix!
+import Footer from "@/components/ui/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -21,13 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Remix Icon CDN */}
         <link
           href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
           rel="stylesheet"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${poppins.variable} font-sans antialiased`}>
         <main className="min-h-screen">
           {children}
         </main>
